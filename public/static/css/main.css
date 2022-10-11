@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.forest1 {
+  background-image: url("../images/forest1_analog.png");
+}
+
+.forest2 {
+  background-image: url("../images/forest2_analog.png");
+}
+
+.forest3 {
+  background-image: url("../images/forest3_analog.png");
+}
+
+.forest4 {
+  background-image: url("../images/forest4_analog.png");
+}
+
+.forest5 {
+  background-image: url("../images/forest5_analog.png");
+}
+
+/*# sourceMappingURL=main.css.map */
