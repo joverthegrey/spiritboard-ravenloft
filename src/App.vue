@@ -1,17 +1,45 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" v-hotkey="keymap">
+    <SpiritBoard/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SpiritBoard from "./components/SpiritBoard.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SpiritBoard
+  },
+  methods: {
+    forest1() {
+      document.body.classList='forest1'
+    },
+    forest2() {
+      document.body.classList='forest2'
+    },
+    forest3() {
+      document.body.classList='forest3'
+    },
+    forest4() {
+      document.body.classList='forest4'
+    },
+    forest5() {
+      document.body.classList='forest5'
+    }
+  },
+  computed: {
+    keymap() {
+      return {
+        // card types
+        'ctrl+1': this.forest1,
+        'ctrl+2': this.forest2,
+        'ctrl+3': this.forest3,
+        'ctrl+4': this.forest4,
+        'ctrl+5': this.forest5
+      }
+    }
   }
 }
 </script>
